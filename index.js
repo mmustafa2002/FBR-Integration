@@ -28,7 +28,7 @@ app.post('/webhook', async (req, res) => {
         // 2️⃣ Send Invoice to FBR
         const fbrResponse = await axios.post(INVOICE_URL, invoiceData, {
             headers: {
-                'Authorization': `Bearer ${accessToken}`,
+                'Authorization': `Bearer 2dba720e-70b7-3b0e-9acc-1c1ea3af97eb`,
                 'x-fbr-client-id': CLIENT_ID,
                 'Content-Type': 'application/json'
             }
